@@ -1,0 +1,14 @@
+
+.vid-grid,.rec-grid {
+  	height: 500px;
+  	margin-left: 0 !important;
+}
+.navbar{
+	min-width: 320px;
+}
+#bodywrapper{
+	min-width: 320px;
+}
+.stage{
+	padding-bottom:20px;
+}

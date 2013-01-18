@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Letswatch.in - Let's Watch India!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="css/bs-extend.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.png">
+  <style type="text/css"></style>
+</head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">LetsWatch.in</a>
+          <form class="navbar-form pull-left">
+              <!-- <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button> -->
+              <input type="text" class="search-query" placeholder="Search or Filter Videos in Stage">
+          </form>
+
+          <div class="nav-collapse collapse " style="height: 0px;">
+            
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="bodywrapper">
+      <div class="row">
+        <div class="span12">
+          <ul class="nav nav-pills">
+            <li class="span1 disabled"><a href="#"></a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Newest</a></li>
+            <li><a href="#">Staff Picked</a></li>
+            <li><a href="#">Highest Rated</a></li>
+            <li><a href="#">Controversial</a></li>
+            <!-- <li><a href="#">LOL</a></li>
+            <li><a href="#">OMG</a></li>
+            <li><a href="#">WTF</a></li>
+            <li><a href="#">FAIL</a></li> -->        
+          </ul>
+       <!-- <div class="alert alert-info">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        Filter the videos you want to watch based on category in the vertical column as well as labels in the horizontal row.
+      </div> -->
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="span10">
+          <div class="tabbable tabs-left " id="stage">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#lA" data-toggle="tab">All</a></li>
+          <li><a href="#lA" data-toggle="tab">News</a></li>
+          <li><a href="#lB" data-toggle="tab">Movies</a></li>
+          <li><a href="#lC" data-toggle="tab">Songs</a></li>
+          <li><a href="#lC" data-toggle="tab">Education</a></li>
+          <li><a href="#lC" data-toggle="tab">LOL</a></li>
+          <li><a href="#lC" data-toggle="tab">OMG</a></li>
+          <li><a href="#lC" data-toggle="tab">TIL</a></li>
+          <li><a href="#lC" data-toggle="tab">Playlists</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active vid-grid span8" id="lA">
+            <!-- Example row of columns -->
+            <div class="row" style="margin:0;">
+              <ul class="thumbnails">
+                <li class="span3">
+                  <a href="#" class="thumbnail">
+                    <img data-src="holder.js/260x270" alt="">
+                  </a>
+                </li>
+                <li class="span2">
+                  <a href="#" class="thumbnail">
+                    <img data-src="holder.js/160x120" alt="">
+                  </a>
+                </li>
+                <li class="span2">
+                  <a href="#" class="thumbnail">
+                    <img data-src="holder.js/160x120" alt="">
+                  </a>
+                </li>
+                <li class="span2">
+                  <a href="#" class="thumbnail">
+                    <img data-src="holder.js/160x120" alt="">
+                  </a>
+                </li>
+                <li class="span2">
+                  <a href="#" class="thumbnail">
+                    <img data-src="holder.js/160x120" alt="">
+                  </a>
+                </li>
+
+                <li class="span3">
+                  <a href="#" class="thumbnail">
+                    <img data-src="holder.js/260x270" alt="">
+                  </a>
+                </li>
+                <li class="span2">
+                  <a href="#" class="thumbnail">
+                    <img data-src="holder.js/160x120" alt="">
+                  </a>
+                </li>
+                <li class="span2">
+                  <a href="#" class="thumbnail">
+                    <img data-src="holder.js/160x120" alt="">
+                  </a>
+                </li>
+                <li class="span2">
+                  <a href="#" class="thumbnail">
+                    <img data-src="holder.js/160x120" alt="">
+                  </a>
+                </li>
+                <li class="span2">
+                  <a href="#" class="thumbnail">
+                    <img data-src="holder.js/160x120" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tab-pane vid-grid span8" id="lB">
+            <p>Howdy, I'm in Section B.</p>
+          </div>
+          <div class="tab-pane vid-grid" id="lC">
+            <p>What up girl, this is Section C.</p>
+          </div>
+        </div>
+          </div>
+        </div>
+
+        <div class="rec-grid span2" >
+        <!-- Example row of columns -->
+        <div class="row" style="margin:0;">
+          <ul class="thumbnails">
+            <li >
+              <a href="#" class="thumbnail">
+                <img data-src="holder.js/160x120" alt="">
+              </a>
+            </li>
+
+            <li >
+              <a href="#" class="thumbnail">
+                <img data-src="holder.js/160x120" alt="">
+              </a>
+            </li>
+
+            <li >
+              <a href="#" class="thumbnail">
+                <img data-src="holder.js/160x120" alt="">
+              </a>
+            </li>
+
+            <li >
+              <a href="#" class="thumbnail">
+                <img data-src="holder.js/160x120" alt="">
+              </a>
+            </li>
+
+
+            
+
+          </ul>
+        </div>
+        </div>
+      </div>
+      
+      <hr>
+      <footer class="pull-right">
+        <p>© StudApps 2013</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/bootstrap-transition.js"></script>
+    <script src="./js/bootstrap-alert.js"></script>
+    <script src="./js/bootstrap-modal.js"></script>
+    <script src="./js/bootstrap-dropdown.js"></script>
+    <script src="./js/bootstrap-scrollspy.js"></script>
+    <script src="./js/bootstrap-tab.js"></script>
+    <script src="./js/bootstrap-tooltip.js"></script>
+    <script src="./js/bootstrap-popover.js"></script>
+    <script src="./js/bootstrap-button.js"></script>
+    <script src="./js/bootstrap-collapse.js"></script>
+    <script src="./js/bootstrap-carousel.js"></script>
+    <script src="./js/bootstrap-typeahead.js"></script>
+    <script src="js/holder.js"></script>
+    <!-- mousewheel plugin -->
+    <script src="./js/jquery.mousewheel.min.js"></script>
+    <!-- custom scrollbars plugin -->
+    <script src="./js/jquery.mCustomScrollbar.js"></script>
+    <script>
+    (function($){
+        $(window).load(function(){
+           $(".vid-grid.active").mCustomScrollbar({
+  
+  scrollEasing:"easeOutCirc", 
+  mouseWheel:"auto", 
+  autoDraggerLength:true, 
+  scrollButtons:{ 
+    enable:false, 
+    scrollType:"continuous", 
+    scrollSpeed:20, 
+    scrollAmount:40 
+  },
+  advanced:{
+    updateOnBrowserResize:true, 
+    updateOnContentResize:true, 
+    autoExpandHorizontalScroll:false, 
+    autoScrollOnFocus:true 
+  }
+});
+        });
+    })(jQuery);
+    </script>
+    <script>
+    (function($){
+        $(window).load(function(){
+           $(".rec-grid").mCustomScrollbar({
+  
+  scrollEasing:"easeOutCirc", 
+  mouseWheel:"auto", 
+  autoDraggerLength:true, 
+  scrollButtons:{ 
+    enable:false, 
+    scrollType:"continuous", 
+    scrollSpeed:20, 
+    scrollAmount:40 
+  },
+  advanced:{
+    updateOnBrowserResize:true, 
+    updateOnContentResize:true, 
+    autoExpandHorizontalScroll:false, 
+    autoScrollOnFocus:true 
+  }
+});
+        });
+    })(jQuery);
+    </script>
+
+</body>
+</html>
