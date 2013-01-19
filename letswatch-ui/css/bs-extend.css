@@ -1,21 +1,9 @@
+.tab-pane.active{
+  height: 500px;
+  margin-left: 0 !important;
+}
 
-.vid-grid,.rec-grid {
-  	height: 500px;
-  	margin-left: 0 !important;
-}
-.navbar{
-	min-width: 320px;
-}
-#bodywrapper{
-	min-width: 320px;
-}
-.stage{
-	padding-bottom:20px;
-}
-.dropdown-menu li > a {
-	color: #000000; 
-}
-.nav-collapse .nav > li > a,.navbar-inverse .nav-collapse .dropdown-menu a 
-{
-color: #ffffff !important;
+.btn-inverse,.btn{
+  background-color: #466F7C;
+  border: 2px black !important;
 }
