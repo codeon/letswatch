@@ -12,3 +12,10 @@
 .stage{
 	padding-bottom:20px;
 }
+.dropdown-menu li > a {
+	color: #000000; 
+}
+.nav-collapse .nav > li > a,.navbar-inverse .nav-collapse .dropdown-menu a 
+{
+color: #ffffff !important;
+}
