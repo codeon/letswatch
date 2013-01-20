@@ -1,9 +1,29 @@
 .tab-pane.active{
-  height: 500px;
-  margin-left: 0 !important;
+	height: 440px;
+  	margin-left: 0 !important;
 }
 
 .btn-inverse,.btn{
-  background-color: #466F7C;
-  border: 2px black !important;
+  background-color: #89B4B6;
+  margin-bottom: 5px;
+}
+
+.fixed {
+    position: fixed;
+    top: 50px;
+}
+
+#stage{
+	
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.nav-tabs{
+	background-color: #ACD1D3;
+
+}
+
+#newest{
+	padding-top: 15px;
 }
