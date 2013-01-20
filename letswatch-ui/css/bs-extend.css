@@ -13,6 +13,13 @@
   
 }
 
+.nav-btn{
+	background-color: #0B4853 !important;
+}
+
+.nav-btn:hover{
+	color: #80CED1;
+}
 
 .fixed {
     position: fixed;
