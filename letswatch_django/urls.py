@@ -10,7 +10,7 @@ urlpatterns = patterns(
     # Examples:
     #~ url(r'^$', 'letswatch_django.views.home', name='home'),
     #~ url(r'^letswatch_django/', include('letswatch_django.foo.urls')),
-	url(r'^/home', home),
+	url(r'^home', home),
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

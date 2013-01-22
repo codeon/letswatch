@@ -1,21 +1,42 @@
-
-.vid-grid,.rec-grid {
-  	height: 500px;
+.tab-pane.active{
+	height: 440px;
   	margin-left: 0 !important;
 }
-.navbar{
-	min-width: 320px;
+
+.btn-inverse,.btn{
+  background-color: #89B4B6;
+  margin-bottom: 5px;
 }
-#bodywrapper{
-	min-width: 320px;
+
+.btn-inverse:hover{
+  background-color: #0B4853;
+  
 }
-.stage{
-	padding-bottom:20px;
+
+.nav-btn{
+	background-color: #0B4853 !important;
 }
-.dropdown-menu li > a {
-	color: #000000; 
+
+.nav-btn:hover{
+	color: #BDDFE0;
 }
-.nav-collapse .nav > li > a,.navbar-inverse .nav-collapse .dropdown-menu a 
-{
-color: #ffffff !important;
+
+.fixed {
+    position: fixed;
+    top: 50px;
+}
+
+#stage{
+	
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.nav-tabs{
+	background-color: #ACD1D3;
+
+}
+
+#newest{
+	padding-top: 15px;
 }
