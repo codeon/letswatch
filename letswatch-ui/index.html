@@ -117,10 +117,10 @@
 
 
     		<div id="stage-wrapper">
-    		<div class="row" id="stage" >
+    		<div class="row"  >
     			<div class="span12">
-    				<div class="tabbable tabs-left">
-		              <ul class="nav nav-tabs">
+    				<div class="tabbable ">
+		              <ul class="nav nav-tabs container" id="nav-stage">
 		              	<li class="active"><a href="#lA" data-toggle="tab">All</a></li>
 				        <li><a href="#lA" data-toggle="tab">News</a></li>
 				        <li><a href="#lB" data-toggle="tab">Movies</a></li>
@@ -175,6 +175,111 @@
 
 				                <li class="span2" data-search="spain" >
 				                  <a href="#" class="thumbnail"  >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
+				                    <img data-src="holder.js/170x120" alt="">
+				                  </a>
+				                </li>
+				                <li class="span2" data-search="spain">
+				                  <a href="#" class="thumbnail" >
 				                    <img data-src="holder.js/170x120" alt="">
 				                  </a>
 				                </li>
@@ -300,8 +405,7 @@
 	     </script>
 	      <script type="text/javascript">
 	      	jQuery(document).ready(function($) {
-	      		var runningRequest = false;
-			    var request;
+	      		
 			   //Identify the typing action
 			    $('input.search-query').keyup(function(e){
 			        e.preventDefault();
@@ -312,41 +416,73 @@
 						}
 					else{
 						$('.thumbnails > li').fadeOut(100);
-						// Now show everything that matches:
-						
 						$('li[data-search*="' + $q.val() + '"]').fadeIn(100);
 						
-						//alert($q.val());
+						
 						
 					}
 
-			        
 			    });
+
+
+			    $("input.search-query").bind("paste",function(){
+    var $q = $(this);
+
+			        if($q.val() == ''){
+			            $('.thumbnails > li').fadeIn(100);
+						}
+					else{
+						$('.thumbnails > li').fadeOut(100);
+						$('li[data-search*="' + $q.val() + '"]').fadeIn(100);
+
+}
+});
+
+
 			});
 
 
 
-	 //     	jQuery(document).ready(function($) {
-	 //     		$('#stage-wrapper').height($("#stage").height());
+	     	
+	     		
 
 
 
 	     		
-	     		 
-	 //     	var sticky = document.querySelector('#stage');
-		// 	var origOffsetY = sticky.offsetTop;
+	    
+	     	(function ($) {
 
-		// 	function onScroll(e) {
+	$(function(){
+		$('#nav-stage-wrapper').height($("#nav-stage").height());
+		// fix sub nav on scroll
+		var $win = $(window),
+				$nav = $('#nav-stage'),
+				navHeight = $('.navbar').first().height(),
+				navTop = $('#nav-stage').length && $('#nav-stage').offset().top - navHeight,
+				isFixed = 0;
 
-		// 	  window.scrollY >= origOffsetY ? sticky.classList.add('fixed') :
-		// 	                                  sticky.classList.remove('fixed');
-		// 	}
+		processScroll();
 
-		// 	document.addEventListener('scroll', onScroll);
+		$win.on('scroll', processScroll);
+
+		function processScroll() {
+			var i, scrollTop = $win.scrollTop();
+			if (scrollTop >= navTop && !isFixed) {
+				isFixed = 1;
+				$nav.addClass('fixed');
+			} else if (scrollTop <= navTop && isFixed) {
+				isFixed = 0;
+				$nav.removeClass('fixed');
+			}
+		}
+
+	});
+
+})(window.jQuery);
 	     		
 		
 
-	 //     	})
+	     	
 		 </script>
 
 	     

@@ -1,5 +1,5 @@
 .tab-pane.active{
-	height: 440px;
+	
   	margin-left: 0 !important;
 }
 
@@ -23,13 +23,16 @@
 
 .fixed {
     position: fixed;
-    top: 50px;
+    top: 51px;
+    z-index: 1020;
+     
 }
 
-#stage{
+#nav-stage{
 	
-	padding-top: 20px;
-	padding-left: 20px;
+	
+	
+	
 }
 
 .nav-tabs{
