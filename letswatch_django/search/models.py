@@ -27,6 +27,7 @@ class Videos(models.Model):
 	rating = models.FloatField()
 	num_views = models.IntegerField()
 	meta_file = models.CharField(max_length=1000)
+	# badge like lol, omg etc.
 	
 	def __unicode__(self):
 		return self.title

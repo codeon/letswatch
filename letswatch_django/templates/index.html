@@ -85,63 +85,53 @@
 	                  <a class="btn btn-inverse btn-large pull-right"   href="#"><i class="icon-chevron-right icon-white icon-large"></i> </a>
 	                  
 	                </div>
+	                {% for trend in trending %}
 	                <li class="span2"  >
-	                  <a href="#" class="thumbnail" >
-	                    <img data-src="holder.js/170x120" alt="">
+	                  <a href="{{trend.link}}" class="thumbnail" >
+	                    <img src="{{trend.thumbnail_link}}" alt="">
 	                  </a>
 	                </li>
-	                <li class="span2" >
-	                  <a href="#" class="thumbnail" >
-	                    <img data-src="holder.js/170x120" alt="">
-	                  </a>
-	                </li>
-	                <li class="span2" >
-	                  <a href="#" class="thumbnail" >
-	                    <img data-src="holder.js/170x120" alt="">
-	                  </a>
-	                </li>
-	                <li class="span2" >
-	                  <a href="#" class="thumbnail">
-	                    <img data-src="holder.js/170x120" alt="">
-	                  </a>
-	                </li>
-	                <li class="span2" >
-	                  <a href="#" class="thumbnail">
-	                    <img data-src="holder.js/170x120" alt="">
-	                  </a>
-	                </li>
-
+	                {% endfor %}
+	                
 		        </ul>
 		    </div>
 		    
 	
 
     		
-    		<div class="row " id="nav-stage-wrapper">
+    		<div class="span2" id="nav-stage-wrapper">
     			
     				<!-- <div class="tabbable "> -->
-		            <div class="span12" id="nav-stage">
+		           <ul class="nav nav-list" id="nav-stage">
 
+<!--
 		            <div class="btn-group pull-left" rel="tooltip" title="Select Category" data-placement="right" data-toggle="buttons-radio">
-					  <button type="button" class="btn btn-large btn-primary active" >All</button>
-					  <button type="button" class="btn btn-large btn-primary">News</button>
-					  <button type="button" class="btn btn-large btn-primary">Movies</button>
-					  <button type="button" class="btn btn-large btn-primary">Songs</button>
-					  <button type="button" class="btn btn-large btn-primary">Trailers</button>
-					  <button type="button" class="btn btn-large btn-primary">Education</button>
-					  <!-- <button type="button" class="btn btn-large btn-primary">Technology</button> -->
-					  <button type="button" class="btn btn-large btn-primary">Controversial</button>
-					  <button type="button" class="btn btn-large btn-primary">LOL</button>
-					  <button type="button" class="btn btn-large btn-primary">OMG</button>
+-->
+					 <li><a href="#"> All</a></li>
+					  <li> <a href="#">News</a></li>
+					  <li> <a href="#">Movies</a></li>
+					  <li> <a href="#">Songs</a></li>
+					  <li> <a href="#">Trailers</a></li>
+					  <li> <a href="#">Education</a></li>
+					  <!-- <li> <a href="#">Technology</a></li> -->
+					  <li> <a href="#">Controversial</a></li>
+					  <li> <a href="#">LOL</a></li>
+					  <li> <a href="#">OMG</a></li>
+<!--
 					</div>  
+-->
 
-					<div class="btn-group pull-right" rel="tooltip" title="Filter Videos" data-placement="left" data-toggle="buttons-radio">
-					  <button type="button" class="btn btn-large btn-primary active">Mixed Bag</button>		
-					  <button type="button" class="btn btn-large btn-primary">Hottest</button>
-					  <button type="button" class="btn btn-large btn-primary">Newest</button>
-					  <button type="button" class="btn btn-large btn-primary">Rising</button>
+<!--
+					<div class="btn-group" rel="tooltip" title="Filter Videos" data-placement="left" data-toggle="buttons-radio">
+-->
+					  <li> <a href="#">Mixed Bag</a></li>		
+					 <li> <a href="#"> Hottest</a></li>
+					  <li> <a href="#">Newest</a></li>
+					  <li> <a href="#">Rising</a></li>
+<!--
 					</div> 
-					</div>
+-->
+					</ul>
 				
 			</div> 
 		              
@@ -149,197 +139,14 @@
 			<div class="row" id= "stage">
 				<div class="span12">
 					<ul class="thumbnails">
-				                <li class="span5" data-search="trains" >
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/340x260" alt="">
+								{% for vid in vids %}
+				                <li class="span3" data-search="trains" >
+				                  <a href="{{vid.link}}" class="thumbnail" >
+				                    <img src="{{vid.thumbnail_link}}" alt="{{vid.title}}">
 				                  </a>
 				                </li>
-				                 <li class="span3" data-search="trains">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/240x260" alt="">
-				                  </a>
-				                </li>
-				                 <li class="span2" data-search="trains">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="trains">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="trains">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="trains">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="trains">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
+				                {% endfor %}
 
-				                <li class="span2" data-search="spain" >
-				                  <a href="#" class="thumbnail"  >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
-				                <li class="span2" data-search="spain">
-				                  <a href="#" class="thumbnail" >
-				                    <img data-src="holder.js/170x120" alt="">
-				                  </a>
-				                </li>
 		            </ul>
 				</div>
 			</div>    		
