@@ -1,42 +1,48 @@
-.tab-pane.active{
-	height: 440px;
-  	margin-left: 0 !important;
-}
 
 .btn-inverse,.btn{
   background-color: #89B4B6;
-  margin-bottom: 5px;
+}
+
+ul#nav-stage .btn-large{
+	padding: 8px 10px;
+	font-size: 14px;
 }
 
 .btn-inverse:hover{
   background-color: #0B4853;
-  
 }
 
 .nav-btn{
 	background-color: #0B4853 !important;
+	color: white !important;
 }
 
 .nav-btn:hover{
-	color: #BDDFE0;
+	color: #BDDFE0 !important;
 }
 
 .fixed {
     position: fixed;
-    top: 50px;
+    top: 51px;
+    z-index: 1020;
+     
 }
 
-#stage{
+#nav-stage-wrapper{
+	padding-bottom:10px;
 	
-	padding-top: 20px;
-	padding-left: 20px;
 }
 
-.nav-tabs{
-	background-color: #ACD1D3;
-
+#nav-stage{
+	background-color: #89B4B6;	
 }
+
+
 
 #newest{
 	padding-top: 15px;
+}
+
+.btn-primary{
+	color: black;
 }
