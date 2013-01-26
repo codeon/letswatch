@@ -129,12 +129,12 @@
 				<div class="span14">
 					<ul class="thumbnails">
 								{% for vid in vids %}
-				                <li class="span3 thumbnail" data-search="trains" >
+				                <li class="span4 thumbnail" data-search="trains" >
 				                  <a href="{{vid.link}}"  >
 				                  	<div class="img-wrapper">
 				                    <img src="{{vid.thumbnail_link}}" alt="{{vid.title}}"/>
 
-				                    <div class= "bookmark"><i class="icon-bookmark icon-large"></i></div>
+				                    <div class= "bookmark" rel="tooltip" title="Watch Later" data-placement="left"><i class="icon-bookmark icon-large"></i></div>
 				                    <div class="overlay pull-left">  
 								        <!-- overlay content -->
 								        <p class="description"> {{vid.title}}</p>  
