@@ -46,7 +46,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a class="brand" href="{{STATIC_URL}}index.html">LetsWatch.in</a>
+	          <a class="brand" href="{{STATIC_URL}}index.html"><strong>LetsWatch.in</strong></a>
 	          <form class="navbar-form pull-left">
               <!-- <input class="span2" type="text" placeholder="Email">
               <input class="span2" type="password" placeholder="Password">
@@ -92,7 +92,7 @@
 	                {% for trend in trending %}
 	                <li class="span2"  >
 	                  <a href="{{trend.link}}" class="thumbnail" >
-	                    <img src="{{trend.thumbnail_link}}" alt="">
+	                    <img src="{{trend.thumbnail_link}}" alt=""/>
 	                  </a>
 	                </li>
 	                {% endfor %}
@@ -131,7 +131,14 @@
 								{% for vid in vids %}
 				                <li class="span3" data-search="trains" >
 				                  <a href="{{vid.link}}" class="thumbnail" >
-				                    <img src="{{vid.thumbnail_link}}" alt="{{vid.title}}">
+				                  	<div class="img-wrapper">
+				                    <img src="{{vid.thumbnail_link}}" alt="{{vid.title}}"/>
+				                    <div class=' description pull-left'>  
+								        <!-- description content -->  
+								        <p class='description_content pull-left'><i class="icon-eye-open"></i>234000</p>  
+								        <p class='description_content pull-right'><i class="icon-time"></i>2:34	</p>  
+								        <!-- end description content -->  
+								    </div>  
 				                  </a>
 				                </li>
 				                {% endfor %}
