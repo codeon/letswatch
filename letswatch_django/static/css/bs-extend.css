@@ -57,8 +57,7 @@ div#nav-stage .btn-large{
 
 div.img-wrapper{  
     position: relative;
-    margin: 0 auto;
-    display: table;  
+    
 }  
 div.description{  
     position: absolute;      
