@@ -129,18 +129,22 @@
 				<div class="span14">
 					<ul class="thumbnails">
 								{% for vid in vids %}
-				                <li class="span3" data-search="trains" >
-				                  <a href="{{vid.link}}" class="thumbnail" >
+				                <li class="span3 thumbnail" data-search="trains" >
+				                  <a href="{{vid.link}}"  >
 				                  	<div class="img-wrapper">
 				                    <img src="{{vid.thumbnail_link}}" alt="{{vid.title}}"/>
-				                    <div class=' description pull-left'>  
-								        <!-- description content -->  
-								        <p class='description_content pull-left'><i class="icon-eye-open"></i>234000</p>  
-								        <p class='description_content pull-right'><i class="icon-time"></i>2:34	</p>  
-								        <!-- end description content -->  
+
+				                    <div class= "bookmark"><i class="icon-bookmark icon-large"></i></div>
+				                    <div class="overlay pull-left">  
+								        <!-- overlay content -->
+								        <p class="description"> {{vid.title}}</p>  
+								        <p class='overlay_content pull-left'><i class="icon-eye-open"></i>234000</p>  
+								        <p class='overlay_content pull-right'><i class="icon-time"></i>2:34	</p>  
+								        <!-- end overlay content -->  
 								    </div>
 								    </div>  
 				                  </a>
+				                  
 				                </li>
 				                {% endfor %}
 
@@ -205,7 +209,8 @@
 	      <script type="text/javascript">
 	      	jQuery(document).ready(function($) {
 
-	      		$('.btn-group').tooltip();	      		
+	      		$('.btn-group').tooltip();
+	      		$('.bookmark').tooltip();	      		
 			   //Identify the typing action
 			    $('input.search-query').keyup(function(e){
 			        e.preventDefault();
