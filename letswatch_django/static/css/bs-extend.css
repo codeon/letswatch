@@ -1,31 +1,30 @@
 body{
-	background-color: #eeeeee;
+	background: url("../img/pw_maze_black.png") repeat scroll 0% 0% transparent;
 }
 
 .container, .navbar {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
     -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+
 }
 
 .white-back{
 	background-color: white;
 }
-.btn-inverse,.btn{
-  background-color: #	;
+.btn-inverse,.btn,#nav-stage{
+  background-color: #82A6DB	;
 }
-#nav-stage{
-	background-color: #45929F;	
-}
+
 .btn-inverse:hover{
-  background-color: #0B4853;
+  background-color: #032A41;
 }
 
 .nav-btn{
-	background-color: #0B4853 !important;
+	background-color: #032A41 !important;
 	color: white !important;
 }
 .nav-btn:hover{
-	color: #BDDFE0 !important;
+	color: #C2CEFF!important;
 }
 
 

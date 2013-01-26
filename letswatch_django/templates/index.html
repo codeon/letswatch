@@ -53,6 +53,14 @@
               <button type="submit" class="btn">Sign in</button> -->
               <input type="text" class="search-query" placeholder="Search or Filter Videos in Stage">
           	  </form>
+
+          	  <a class="btn btn-primaery disabled nav-btn" > Trending:</a>
+          	  <a class="btn btn-primary nav-btn" href="#"> Topic1</a>
+          	  <a class="btn btn-primary nav-btn" href="#"> Topic2</a>
+          	  <a class="btn btn-primary nav-btn" href="#"> Topic3</a>
+          	  <a class="btn btn-primary nav-btn" href="#"> Topic4</a>
+          	  <a class="btn btn-primary nav-btn" href="#"> Topic5</a>
+			    
 	          <div class="btn-group  pull-right " >
 			    <a class="btn btn-primary nav-btn" href="#"><i class="icon-user"></i> User</a>
 			    <a class="btn btn-primary dropdown-toggle nav-btn" data-toggle="dropdown" href="#"><span class="icon-caret-down"></span></a>
@@ -74,13 +82,13 @@
     	================================================== -->
     	<div class="container white-back" >
     		
-    		<div class="row " id="newest">
+    		<div class=" " id="newest">
     			<ul class="thumbnails" >
-	                <div class="span2 ">
+	               <!--  <div class="span2 ">
 	                  <a class="btn btn-inverse btn-large pull-right"  href="#"><i class="icon-chevron-left icon-white icon-large"></i> </a>
 	                  <a class="btn btn-inverse btn-large pull-right"   href="#"><i class="icon-chevron-right icon-white icon-large"></i> </a>
 	                  
-	                </div>
+	                </div> -->
 	                {% for trend in trending %}
 	                <li class="span2"  >
 	                  <a href="{{trend.link}}" class="thumbnail" >
