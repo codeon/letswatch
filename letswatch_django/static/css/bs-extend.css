@@ -94,3 +94,11 @@ p.description{
 	font-size: 16px;
 	color: white;
 }
+
+.img-badge {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -5px;
+    top: -10px;
+}

@@ -127,17 +127,20 @@
 	          	
 			<div class="row" id="stage">
 				<div class="span14">
-					<ul class="thumbnails">
+					<ul class="searchable  thumbnails">
 								{% for vid in vids %}
 				                <li class="span4 thumbnail" data-search="trains" >
 				                  <a href="{{vid.link}}"  >
 				                  	<div class="img-wrapper">
 				                    <img src="{{vid.thumbnail_link}}" alt="{{vid.title}}"/>
 
+				                    <img class="img-badge" src="{{STATIC_URL}}img/viral.png" alt="Viral"/>
+
 				                    <div class= "bookmark" rel="tooltip" title="Watch Later" data-placement="left"><i class="icon-bookmark icon-large"></i></div>
+
 				                    <div class="overlay pull-left">  
 								        <!-- overlay content -->
-								        <p class="description"> {{vid.title}}</p>  
+								        <p class="description"> <em> {{vid.title}} </em></p>  
 								        <p class='overlay_content pull-left'><i class="icon-eye-open"></i>234000</p>  
 								        <p class='overlay_content pull-right'><i class="icon-time"></i>2:34	</p>  
 								        <!-- end overlay content -->  
@@ -217,20 +220,20 @@
 			        var $q = $(this);
 
 			        if($q.val() == ''){
-			            $('.thumbnails > li').fadeIn(100);
+			            $('.thumbnails.searchable > li').fadeIn(100);
 						}
 					else{
-						$('.thumbnails > li').fadeOut(100);
+						$('.thumbnails.searchable > li').fadeOut(100);
 						$('li[data-search*="' + $q.val() + '"]').fadeIn(100);
 					}
 			    });
 			    $("input.search-query").bind("paste",function(){
     				var $q = $(this);
 			        if($q.val() == ''){
-			            $('.thumbnails > li').fadeIn(100);
+			            $('.thumbnails.searchable > li').fadeIn(100);
 						}
 					else{
-						$('.thumbnails > li').fadeOut(100);
+						$('.thumbnails.searchable > li').fadeOut(100);
 						$('li[data-search*="' + $q.val() + '"]').fadeIn(100);
 					}
 				});
