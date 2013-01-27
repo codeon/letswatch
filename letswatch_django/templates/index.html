@@ -46,7 +46,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a class="brand" href="{{STATIC_URL}}index.html"><strong>LetsWatch.in</strong></a>
+	          <a class="brand" href="./index.html"><img src="{{STATIC_URL}}img/letswatch.png"  /></a>
 	          <form class="navbar-form pull-left">
               <!-- <input class="span2" type="text" placeholder="Email">
               <input class="span2" type="password" placeholder="Password">
@@ -65,15 +65,23 @@
 			    <a class="btn btn-primary nav-btn" href="#"><i class="icon-user"></i> User</a>
 			    <a class="btn btn-primary dropdown-toggle nav-btn" data-toggle="dropdown" href="#"><span class="icon-caret-down"></span></a>
 			    <ul class="dropdown-menu">
-			        <li><a href="#"><i class=" icon-edit"></i> Post Video</a></li>
+			        
 			        <li><a href="#"><i class="icon-cog"></i> Settings</a></li>
 			        <li class="divider"></li>
 			        <li><a href="#"><i class="icon-signout"></i> Sign Out</a></li>
 			    </ul>
 			</div>
-			<div class="btn-group  pull-right nav-btn">
+
+
+			<!-- above or below based on session -->	
+			<!-- <div class="btn-group  pull-right nav-btn">
 			    <a class="btn btn-primary nav-btn" href="#"><i class="icon-signin"></i> Login</a>
+			</div> -->
+
+			<div class="btn-group  pull-right nav-btn">
+			   <a class="btn btn-primary nav-btn" href="#" role="button" data-toggle="modal" data-target="#myModal"><i class=" icon-edit"></i> Post Video</a>
 			</div>
+			
 	      </div>
 	    </div>
 		
@@ -113,7 +121,7 @@
 					<!-- <button type="button" class="btn btn-large btn-primary">Technology</button> -->
 					<button type="button" class="btn btn-large btn-primary">Controversial</button>
 					<button type="button" class="btn btn-large btn-primary">LOL</button>
-					<button type="button" class="btn btn-large btn-primary">OMG</button>
+					<!-- <button type="button" class="btn btn-large btn-primary">OMG</button> -->
 				</div>
 				<div class="btn-group pull-right" rel="tooltip" title="Filter Videos" data-placement="left" data-toggle="buttons-radio">
 					<button type="button" class="btn btn-large btn-primary active">Mixed Bag</button>    
@@ -122,6 +130,9 @@
 					<button type="button" class="btn btn-large btn-primary">Rising</button>
 				</div> 
 			</div>
+
+			
+
 		</div>
 		              
 	          	
@@ -129,7 +140,7 @@
 				<div class="span14">
 					<ul class="searchable  thumbnails">
 								{% for vid in vids %}
-				                <li class="span4 thumbnail" data-search="trains" >
+				                <li class="span3 thumbnail" data-search="trains" >
 				                  <a href="{{vid.link}}"  >
 				                  	<div class="img-wrapper">
 				                    <img src="{{vid.thumbnail_link}}" alt="{{vid.title}}"/>
@@ -153,6 +164,9 @@
 
 		            </ul>
 				</div>
+
+
+
 			</div>
 			    		
     	
@@ -161,6 +175,21 @@
 	      	</footer>
 
     	</div> <!-- Container ends -->
+
+    	<!-- Modal -->
+		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 id="myModalLabel">Post Video</h3>
+		</div>
+		<div class="modal-body">
+		<p>Link/Category/Meta/Preview/Other Stuff</p>
+		</div>
+		<div class="modal-footer">
+		<button class="btn  btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
+		<button class="btn btn-primary">Save changes</button>
+		</div>
+		</div>
     			
 
 

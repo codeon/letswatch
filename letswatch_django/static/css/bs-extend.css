@@ -1,7 +1,15 @@
 body{
-	background: url("../img/pw_maze_black.png") repeat scroll 0% 0% transparent;
+	background: url("../img/pw_maze_black.png") repeat fixed 0% 0% transparent;
 }
 
+.brand > img{
+    height:45px;
+    
+}
+
+.brand{
+    padding: 0px 10px 5px 10px !important;
+}
 .container, .navbar {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
     -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
@@ -29,7 +37,7 @@ body{
 
 
 div#nav-stage .btn-large{
-	padding: 8px 10px;
+	padding: 5px 12px;
 	font-size: 14px;
 }
 
@@ -64,8 +72,8 @@ div.bookmark{
 	position:absolute;
 	top:0px;
 	right: 0px;
-	background-color: black;
-    opacity: 0.7; 
+    background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.7);
     color: #82A6DB;
     
 }
@@ -91,7 +99,7 @@ p.overlay_content{
 
 p.description{
 	margin: 0  0 0 5px;	
-	font-size: 16px;
+	font-size: 14px;
 	color: white;
 }
 
