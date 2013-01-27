@@ -1,24 +1,36 @@
-
-.btn-inverse,.btn{
-  background-color: #89B4B6;
+body{
+	background: url("../img/pw_maze_black.png") repeat scroll 0% 0% transparent;
 }
 
-ul#nav-stage .btn-large{
-	padding: 8px 10px;
-	font-size: 14px;
+.container, .navbar {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+
+}
+
+.white-back{
+	background-color: white;
+}
+.btn-inverse,.btn,#nav-stage{
+  background-color: #82A6DB	;
 }
 
 .btn-inverse:hover{
-  background-color: #0B4853;
+  background-color: #032A41;
 }
 
 .nav-btn{
-	background-color: #0B4853 !important;
+	background-color: #032A41 !important;
 	color: white !important;
 }
-
 .nav-btn:hover{
-	color: #BDDFE0 !important;
+	color: #C2CEFF!important;
+}
+
+
+div#nav-stage .btn-large{
+	padding: 8px 10px;
+	font-size: 14px;
 }
 
 .fixed {
@@ -30,12 +42,8 @@ ul#nav-stage .btn-large{
 
 #nav-stage-wrapper{
 	padding-bottom:10px;
-	
 }
 
-#nav-stage{
-	background-color: #89B4B6;	
-}
 
 
 
@@ -45,4 +53,52 @@ ul#nav-stage .btn-large{
 
 .btn-primary{
 	color: black;
+}
+
+div.img-wrapper{  
+    position: relative;
+
+}
+
+div.bookmark{
+	position:absolute;
+	top:0px;
+	right: 0px;
+	background-color: black;
+    opacity: 0.7; 
+    color: #82A6DB;
+    
+}
+.thumbnail{
+	border: 2px solid #DDD;
+}
+
+
+div.overlay{  
+    position: absolute;      
+  	bottom: 5px;
+  	width: 100%;
+    background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}  
+p.overlay_content{  
+    padding:2px;  
+    margin:0px;
+    font-size: 10px;
+}
+
+
+p.description{
+	margin: 0  0 0 5px;	
+	font-size: 16px;
+	color: white;
+}
+
+.img-badge {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -5px;
+    top: -10px;
 }
