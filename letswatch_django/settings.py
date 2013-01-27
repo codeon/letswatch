@@ -1,4 +1,8 @@
 # Django settings for letswatch_django project.
+import os.path
+
+#Get the absolute path of the settings.py file's directory
+PWD = os.path.dirname(os.path.realpath(__file__ )) 
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -15,7 +19,7 @@ DATABASES = {
         'NAME': 'letswatch',                      # Or path to database file if using sqlite3.
         'USER': 'root',                      # Not used with sqlite3.
         'PASSWORD': 'kapil',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+        'HOST': '172.24.64.16',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
@@ -69,7 +73,7 @@ ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-	"/home/kapilg/letswatch/letswatch_django/static/",
+	os.path.join(PWD, "static/"),
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -104,7 +108,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'letswatch_django.urls'
 
 TEMPLATE_DIRS = (
-	"/home/kapilg/letswatch/letswatch_django/templates/",
+	os.path.join(PWD, "templates/")
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.

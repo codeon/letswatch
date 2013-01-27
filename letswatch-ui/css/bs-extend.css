@@ -1,10 +1,12 @@
-
+body{
+	background-color: rgba(193, 212, 214, 0.47);
+}
 .btn-inverse,.btn{
   background-color: #89B4B6;
 }
 
 div#nav-stage .btn-large{
-	padding: 8px 10px;
+	padding: 12px 12px;
 	font-size: 14px;
 }
 
